@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#course-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Navigation bar under course title */
+nav {
+    background-color: #000;
+    /* Black nav bar */
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+    		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Left card wider */
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card h2 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Content inside cards */
+.info,
+.skilllist {
+    padding: 15px;
+}
+
+/* About Me layout */
+.info {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 15px;
+    align-items: start;
+}
+
+.info img {
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Links styling */
+.skilllist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skilllist ul li {
+    margin-bottom: 8px;
+}
+
+.skilllist ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.skilllist ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: #00ff00;
+    /* Green for last modified */
+}
