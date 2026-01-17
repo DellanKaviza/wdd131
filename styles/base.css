@@ -145,12 +145,12 @@ h1 {
     flex-direction: row;
 }
 
-.nigeria-flag img {
+.flag img {
     padding: 5px;
     margin: 0 2rem 0 0;
 }
 
-.nigeria-flag p {
+.flag p {
     font-style: italic;
     font-size: 0.8rem;
     text-align: justify;
