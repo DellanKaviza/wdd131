@@ -106,7 +106,7 @@ main h1 {
 
 /* Content inside cards */
 .info,
-.skilllist {
+.links {
     padding: 15px;
 }
 
@@ -125,21 +125,21 @@ main h1 {
 }
 
 /* Links styling */
-.skilllist ul {
+.links ul {
     list-style: none;
     padding: 0;
 }
 
-.skilllist ul li {
+.links ul li {
     margin-bottom: 8px;
 }
 
-.skilllist ul li a {
+.links ul li a {
     color: #2c3e50;
     text-decoration: none;
 }
 
-.skilllist ul li a:hover {
+.links ul li a:hover {
     text-decoration: underline;
 }
 
