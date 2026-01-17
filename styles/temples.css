@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #f4f4f4;
+    --accent-color: #ffb703;
+    --text-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem 0 0;
+    text-align: center;
+    font-weight: 400;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+#page-title {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+nav {
+    background-color: #080808;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+    		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem
+}
+
+h1 {
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+
+
+
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    justify-content: center;
+    gap: 1em;
+}
+
+.temple {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.temple p {
+    font-weight: 600;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: #00ff00;
+    /* Green for last modified */
+}
