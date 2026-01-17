@@ -158,6 +158,12 @@ p {
     flex-direction: row;
 }
 
+h3 {
+    border-bottom: 1px solid var(--text-color);
+    text-align: center;
+    
+}
+
 .flag img {
     padding: 5px;
     margin: 0 2rem 0 0;
