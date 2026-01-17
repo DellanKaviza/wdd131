@@ -122,7 +122,14 @@ h1 {
     
 }
 
+.links ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+}
 
+.links ul li a:hover {
+    text-decoration: underline;
+}
 
 /*PERSONAL INFO*/
 
