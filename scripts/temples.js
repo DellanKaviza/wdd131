@@ -10,7 +10,7 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 // use the date object
 const today = new Date();
 
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+//year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
 hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
