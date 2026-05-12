@@ -1,4 +1,4 @@
-/* Larger Views *****************************
+/* Larger Views ******************************/
 @media (min-width: 740px) {
     header {
         display: flex;
@@ -14,4 +14,4 @@
     nav a {
         flex: 1 1 100%;
     }
-}*/
+}
