@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media (min-width: 740px) {
+@media (min-width: 40em) {
     header {
         display: flex;
         align-items: center;
@@ -13,5 +13,8 @@
 
     nav a {
         flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
     }
 }

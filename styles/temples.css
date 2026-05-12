@@ -36,6 +36,20 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
 }
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: yellow;
+}
+
+
+#menu::before {
+    content: "=";
+}
 
 nav {
     background-color: #080808;
@@ -106,7 +120,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
+#menu.show::before {
+    content: "X";
+}
 
 
 
