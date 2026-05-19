@@ -37,61 +37,106 @@ header {
     font-size: 1.8rem;
 }
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	background-color: #eee;
-	color: #000;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: yellow;
 }
 
+
 #menu::before {
-	content: "≡";
+    content: "=";
 }
 
 nav {
-	background-color: #ace;
+    background-color: #080808;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+
+
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
 }
 
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
 }
 
-.navigation a:hover,
-.navigation a:active {
-	color: white;
-	background-color: black;
+nav ul li {
+    flex: 1 0 auto;
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+    		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
 }
 
-.show li {
-	display: block;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    text-decoration: underline;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
+
+
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem
+}
+
+h1 {
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
 
 
 
