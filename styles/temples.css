@@ -42,13 +42,13 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: #eee;
-    color: yellow;
+    background-color: #ace;
+    color: black;
 }
 
 
 #menu::before {
-    content: "=";
+    content: "≡";
 }
 
 nav {
@@ -94,8 +94,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 10px 0;
+    /* gap: 30px;
+    padding: 10px 0; */
 }
 
 nav ul li {
@@ -109,8 +109,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
+    /* border-radius: 4px;
+    padding: 0.5rem 1rem; */
 }
 
 
@@ -118,6 +118,14 @@ nav a:hover {
     background-color: var(--accent-color);
     color: #000;
     text-decoration: underline;
+}
+
+.navigation li {
+	display: none;
+}
+
+.show li {
+	display: block;
 }
 
 #menu.show::before {
