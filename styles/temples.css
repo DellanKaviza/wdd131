@@ -70,11 +70,11 @@ nav a {
     font-size: larger;
 }
 
-nav a:hover {
+/* nav a:hover {
     text-decoration: underline double;
     background-color: #eee;
     color: #000;
-}
+} */
 
 .active {
     color: yellow;
