@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe</title>
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Zimbabwe</h1>
+</header>
+
+<main>
+
+ 
+  <section class="hero">
+    <picture>
+      <source srcset="images/zim-large.webp" media="(min-width: 768px)">
+      <img src="images/zim-small.webp" alt="Zimbabwe landscape" loading="lazy">
+    </picture>
+  </section>
+
+  
+  <section class="card data">
+    <h2>Data</h2>
+    <p><strong>Area:</strong> 390,757 sq km</p>
+    <p><strong>Population:</strong> 15 million</p>
+    <p><strong>Capital:</strong> Harare</p>
+    <p><strong>Languages:</strong> English, Shona, Ndebele</p>
+    <p><strong>Currency:</strong> Zimbabwe Dollar</p>
+    <p><strong>Time Zone:</strong> UTC+2</p>
+    <p><strong>Calling Code:</strong> +263</p>
+    <p><strong>Internet TLD:</strong> .zw</p>
+  </section>
+
+
+  <section class="card weather">
+    <h2>Weather</h2>
+
+    
+    <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+
+    <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
+    <p><strong>Conditions:</strong> Partly Cloudy</p>
+    <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Dellan Kaviza | Zimbabwe</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>

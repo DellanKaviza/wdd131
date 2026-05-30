@@ -1,0 +1,87 @@
+:root {
+  --primary: #d21034;
+  --secondary: #007a3d;
+  --light: #f4f4f4;
+  --dark: #333;
+}
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e6efe6;
+  color: var(--dark);
+}
+
+/* HEADER */
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* WEATHER ICON */
+.weather-icon {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* LARGE VIEW */
+@media (min-width: 768px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .hero {
+    grid-column: 1 / 4;
+  }
+
+  .data {
+    grid-column: 1;
+  }
+
+  .weather {
+    grid-column: 3;
+  }
+
+  /* Hide SVG and use emoji */
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
