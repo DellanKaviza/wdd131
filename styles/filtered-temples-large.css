@@ -7,8 +7,13 @@
     }
 
     nav ul {
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
+        gap: 20px;
+    }
+    nav ul li {
+        flex: none;
     }
 
     nav a {
