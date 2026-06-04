@@ -1,4 +1,6 @@
+
 // HAMBURGER MENU
+
 const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
@@ -7,12 +9,17 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+
+
 // FOOTER
+
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 
-// TEMPLE DATA
+
+// TEMPLE DATA (ARRAY)
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -90,14 +97,16 @@ const temples = [
 ];
 
 
+
 // DISPLAY FUNCTION
+
 const container = document.getElementById("temple-container");
 
 function displayTemples(list) {
     container.innerHTML = "";
 
     list.forEach(temple => {
-        const card = document.createElement("div");
+        const card = document.createElement("section");
         card.classList.add("temple");
 
         card.innerHTML = `
@@ -113,7 +122,9 @@ function displayTemples(list) {
 }
 
 
+
 // FILTER FUNCTION
+
 function filterTemples(type) {
     let filtered;
 
@@ -133,5 +144,27 @@ function filterTemples(type) {
 }
 
 
-// LOAD ALL ON START
+
+// NAVIGATION EVENT LISTENERS 
+
+const menuMap = {
+    home: "all",
+    old: "old",
+    new: "new",
+    large: "large",
+    small: "small"
+};
+
+Object.keys(menuMap).forEach(id => {
+    document.getElementById(id).addEventListener("click", (e) => {
+        e.preventDefault();
+        filterTemples(menuMap[id]);
+    });
+});
+
+
+
+// INITIAL LOAD
+
 displayTemples(temples);
+``
