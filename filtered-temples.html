@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <span id="page-title">Temple Album</span>
+    <a id="menu" href="#"></a>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="filterTemples('all')">Home</a></li>
+            <li><a href="#" onclick="filterTemples('old')">Old</a></li>
+            <li><a href="#" onclick="filterTemples('new')">New</a></li>
+            <li><a href="#" onclick="filterTemples('large')">Large</a></li>
+            <li><a href="#" onclick="filterTemples('small')">Small</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Temple Album</h1>
+
+<main class="temples" id="temple-container"></main>
+
+<footer>
+    <p>&copy;<span id="year"></span> Dellan Kaviza</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
