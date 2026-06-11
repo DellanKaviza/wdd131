@@ -1,0 +1,41 @@
+/* Color Scheme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    /* Light pink background */
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #d63384;
+    /* Main pink color */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    color: #d63384;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-left: 5px solid #d63384;
+    border-radius: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.wireframe {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px dashed #999;
+}
