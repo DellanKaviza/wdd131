@@ -21,11 +21,10 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 1.5rem 0 0;
     text-align: center;
     font-weight: 400;
     display: grid;
-    grid-gap: 1rem;
+    gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px #333;
@@ -36,6 +35,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
 }
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -46,9 +46,12 @@ header {
     color: black;
 }
 
-
 #menu::before {
     content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
 }
 
 nav {
@@ -59,6 +62,17 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a {
@@ -70,17 +84,15 @@ nav a {
     font-size: larger;
 }
 
-/* nav a:hover {
-    text-decoration: underline double;
-    background-color: #eee;
+nav a:hover {
+    background-color: var(--accent-color);
     color: #000;
-} */
+    text-decoration: underline;
+}
 
 .active {
     color: yellow;
 }
-
-
 
 .navigation {
     list-style: none;
@@ -90,64 +102,24 @@ nav a {
     align-items: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    /* gap: 30px;
-    padding: 10px 0; */
-}
-
-nav ul li {
-    flex: 1 0 auto;
-    /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
-    		in this example, the items will not shrink but can grow to fill the space at natural content width*/
-
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    /* border-radius: 4px;
-    padding: 0.5rem 1rem; */
-}
-
-
-nav a:hover {
-    background-color: var(--accent-color);
-    color: #000;
-    text-decoration: underline;
-}
-
 .navigation li {
-	display: none;
+    display: none;
 }
 
 .show li {
-	display: block;
+    display: block;
 }
-
-#menu.show::before {
-    content: "X";
-}
-
-
 
 main {
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 1rem
+    padding: 1rem;
 }
 
 h1 {
     margin: 0 auto 20px;
     text-align: center;
 }
-
-
-
-
 
 .temples {
     display: grid;
@@ -166,7 +138,7 @@ h1 {
     font-weight: 600;
 }
 
-/*FOOTER*/
+/* FOOTER */
 footer {
     background-color: #2c3e50;
     color: white;
@@ -182,5 +154,4 @@ footer p {
 
 #lastModified {
     color: #00ff00;
-    /* Green for last modified */
 }
